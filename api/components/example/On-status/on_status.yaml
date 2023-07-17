@@ -5,20 +5,19 @@ context:
       code: std:080
     country:
       code: IND
-  action: confirm
+  action: on_status
   version: 1.0.0
   bap_id: buyerapp.com
   bap_uri: https://buyerapp.com/ondc
   bpp_id: sellerapp.com
   bpp_uri: https://sellerapp.com/ondc
   transaction_id: T2
-  message_id: M4
-  timestamp: 2023-03-10T10:00:00.402Z
-  ttl: PT30S
+  message_id: M5
+  timestamp: 2023-03-10T10:05:21.631Z
 message:
   order:
     id: O1
-    status: CREATED
+    status: IN_PROGRESS
     fulfillments:
       - id: F1
         type: ONLINE_EMAIL_SMS
@@ -32,7 +31,7 @@ message:
           - id: "0"
             contact:
               phone: "9999888867"
-              email: reciever@test.com
+              email: receiver@test.com
             person:
               name: TEST Receiver
     provider:
@@ -119,11 +118,11 @@ message:
     payments:
       - type: ON-ORDER
         collected_by: BAP
-        status: PAID
+        status: CONFIRMED
         params:
           currency: INR
           transaction_id: "12345"
-          amount: "2101"
+          amount: "1110"
         tags:
           - descriptor:
               code: BUYER_FINDER_FEES
@@ -156,4 +155,4 @@ message:
                   code: settlement_counterparty
                 value: BPP
     created_at: 2023-03-10T10:02:18.492Z
-    updated_at: 2023-03-10T10:02:18.492Z
+    updated_at: 2023-03-10T10:05:21.631Z

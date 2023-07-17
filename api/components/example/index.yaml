@@ -1,0 +1,28 @@
+search:
+  examples:
+    - $ref: ./search/search_by_cat.yaml
+    - $ref: ./search/search_by_item.yaml
+select:
+  examples:
+    - $ref: "./Select/select.yaml"
+init:
+  examples:
+    - $ref: "./Init/init.yaml"
+confirm:
+  examples:
+    - $ref: "./Confirm/confirm.yaml"
+status:
+  examples:
+    - $ref: "./Status/status.yaml"
+on_search:
+  examples:
+    - $ref: "./On-search/on_search.yaml"
+on_select:
+  examples:
+    - $ref: "./On-select/on_select.yaml"
+on_init:
+  examples:
+    - $ref: "./On-Init/on_init.json"
+on_confirm:
+  examples:
+    - $ref:  "./On-confirm/on_confirm.yaml"
